@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kelompok 7</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0614',
+                        cardBg: '#130c24',
+                        accentPurple: '#8b5cf6',
+                        accentPink: '#d946ef',
+                        borderPurple: '#2d1b4e'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-white font-sans antialiased selection:bg-accentPurple selection:text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-borderPurple/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentPurple to-accentPink flex items-center justify-center font-bold text-lg shadow-lg shadow-accentPurple/30">
+                    K7
+                </div>
+                <span class="font-bold text-xl tracking-wide">Kelompok 7</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#beranda" class="hover:text-accentPink transition">BERANDA</a>
+                <a href="#tim" class="hover:text-accentPink transition">TIM</a>
+                <a href="#proyek" class="hover:text-accentPink transition">PROYEK</a>
+                <a href="#kontak" class="hover:text-accentPink transition">KONTAK</a>
+            </div>
+
+            <a href="#kontak" class="bg-gradient-to-r from-accentPurple to-accentPink px-6 py-2.5 rounded-xl font-semibold text-sm hover:opacity-90 transition shadow-lg shadow-accentPurple/20">
+                HUBUNGI KAMI
+            </a>
+        </div>
+    </nav>
+
+    <section id="beranda" class="pt-36 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentPurple/40 bg-accentPurple/10 text-accentPink text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-accentPink animate-ping"></span>
+                    Mata Kuliah Pemrograman Web - 2024
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+                    PORTFOLIO <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">KELOMPOK 7</span>
+                </h1>
+                <p class="text-2xl font-light text-gray-300 h-10">
+                    Kami <span id="typing-text" class="font-semibold text-accentPink border-r-2 border-accentPink pr-1"></span>
+                </p>
+                <p class="text-gray-400 max-w-xl text-base leading-relaxed">
+                    Tim dari 4 mahasiswa yang membangun solusi digital inovatif — dari konsep desain hingga deployment penuh.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#proyek" class="bg-gradient-to-r from-accentPurple to-accentPink px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:gap-3 transition-all shadow-lg shadow-accentPurple/30">
+                        LIHAT PROYEK <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#tim" class="px-6 py-3 rounded-xl font-semibold border border-borderPurple bg-cardBg/50 hover:bg-cardBg transition">
+                        KENALI TIM
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center lg:justify-end">
+                <div class="relative w-64 h-64 rounded-full border border-borderPurple/80 flex items-center justify-center bg-cardBg/30 backdrop-blur-sm shadow-2xl">
+                    <div class="absolute inset-2 rounded-full border border-dashed border-accentPurple/30 animate-[spin_20s_linear_infinite]"></div>
+                    <div class="text-center">
+                        <span class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">K7</span>
+                        <p class="text-xs text-gray-400 mt-1 font-mono">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-borderPurple/40">
+            <div class="bg-cardBg/40 border border-borderPurple/50 p-6 rounded-2xl">
+                <h3 class="text-4xl font-bold text-accentPink">2</h3>
+                <p class="text-gray-400 text-sm mt-1">Proyek</p>
+            </div>
+            <div class="bg-cardBg/40 border border-borderPurple/50 p-6 rounded-2xl">
+                <h3 class="text-4xl font-bold text-accentPink">4</h3>
+                <p class="text-gray-400 text-sm mt-1">Anggota</p>
+            </div>
+            <div class="bg-cardBg/40 border border-borderPurple/50 p-6 rounded-2xl">
+                <h3 class="text-4xl font-bold text-accentPink">1</h3>
+                <p class="text-gray-400 text-sm mt-1">Semester</p>
+            </div>
+            <div class="bg-cardBg/40 border border-borderPurple/50 p-6 rounded-2xl">
+                <h3 class="text-4xl font-bold text-accentPink">100%</h3>
+                <p class="text-gray-400 text-sm mt-1">Semangat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim" class="py-20 px-6 max-w-7xl mx-auto border-t border-borderPurple/30">
+        <div class="space-y-2 mb-10">
+            <span class="text-xs font-mono text-accentPink uppercase tracking-widest">01. TIM KAMI</span>
+            <h2 class="text-3xl md:text-4xl font-bold">Orang di <span class="text-accentPurple">Balik Layar</span></h2>
+        </div>
+
+        <div class="relative rounded-3xl overflow-hidden mb-8 border border-borderPurple/50 group">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Team Photo" class="w-full h-80 object-cover object-center group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/40 to-transparent"></div>
+            <div class="absolute bottom-6 left-6">
+                <p class="text-xs text-accentPink font-mono uppercase">Kelompok 7 • Pemrograman Web 2024</p>
+                <h3 class="text-2xl font-bold">Arya • Rina • Bima • Nadia</h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-cardBg border border-borderPurple/60 p-6 rounded-2xl hover:border-accentPurple transition">
+                <div class="w-12 h-12 rounded-xl bg-accentPurple/20 text-accentPink font-bold flex items-center justify-center mb-4">AS</div>
+                <h4 class="font-bold text-lg">Arya Santoso</h4>
+                <p class="text-gray-400 text-sm">UI/UX Designer</p>
+            </div>
+            <div class="bg-cardBg border border-borderPurple/60 p-6 rounded-2xl hover:border-accentPurple transition">
+                <div class="w-12 h-12 rounded-xl bg-accentPurple/20 text-accentPink font-bold flex items-center justify-center mb-4">RD</div>
+                <h4 class="font-bold text-lg">Rina Dewi</h4>
+                <p class="text-gray-400 text-sm">Frontend Developer</p>
+            </div>
+            <div class="bg-cardBg border border-borderPurple/60 p-6 rounded-2xl hover:border-accentPurple transition">
+                <div class="w-12 h-12 rounded-xl bg-accentPurple/20 text-accentPink font-bold flex items-center justify-center mb-4">BP</div>
+                <h4 class="font-bold text-lg">Bima Putra</h4>
+                <p class="text-gray-400 text-sm">Backend Developer</p>
+            </div>
+            <div class="bg-cardBg border border-borderPurple/60 p-6 rounded-2xl hover:border-accentPurple transition">
+                <div class="w-12 h-12 rounded-xl bg-accentPurple/20 text-accentPink font-bold flex items-center justify-center mb-4">NL</div>
+                <h4 class="font-bold text-lg">Nadia Lestari</h4>
+                <p class="text-gray-400 text-sm">Project Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek" class="py-20 px-6 max-w-7xl mx-auto border-t border-borderPurple/30">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+                <span class="text-xs font-mono text-accentPink uppercase tracking-widest">02. PROYEK KAMI</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Dua Proyek Unggulan</h2>
+            </div>
+            <div class="flex bg-cardBg border border-borderPurple p-1 rounded-xl">
+                <button id="tab-nexus" onclick="switchProject('nexus')" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-accentPurple text-white">Nexus Dashboard</button>
+                <button id="tab-aether" onclick="switchProject('aether')" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition text-gray-400 hover:text-white">Aether Commerce</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-cardBg/40 border border-borderPurple p-6 md:p-8 rounded-3xl">
+            <div class="lg:col-span-7 bg-cardBg border border-borderPurple rounded-2xl p-4 shadow-xl">
+                <div class="flex items-center justify-between border-b border-borderPurple/60 pb-3 mb-4">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                    </div>
+                    <span id="project-url" class="text-xs font-mono text-gray-400 bg-darkBg/60 px-3 py-1 rounded-md">nexus-dashboard.vercel.app</span>
+                    <span id="project-tag" class="text-xs font-mono text-accentPink border border-accentPink/40 px-2 py-0.5 rounded">Proyek Utama</span>
+                </div>
+                <div class="h-64 md:h-80 bg-darkBg/80 rounded-xl border border-borderPurple/40 flex items-center justify-center p-6 text-center">
+                    <p id="project-preview-text" class="text-gray-500 text-sm font-mono">[ Preview Tampilan Dashboard Interactive ]</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <span id="project-category" class="text-xs text-accentPink font-mono">Platform Analitik Real-Time</span>
+                    <h3 id="project-title" class="text-2xl font-bold mt-1">Nexus Dashboard</h3>
+                    <p id="project-desc" class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Platform analitik real-time dengan visualisasi data interaktif dan sistem manajemen pengguna berbasis AI. Menampilkan grafik dinamis, laporan otomatis, dan dashboard yang dapat dikustomisasi.
+                    </p>
+                </div>
+
+                <div id="project-tech" class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-darkBg border border-borderPurple rounded-lg text-xs font-mono text-gray-300">React</span>
+                    <span class="px-3 py-1 bg-darkBg border border-borderPurple rounded-lg text-xs font-mono text-gray-300">TypeScript</span>
+                    <span class="px-3 py-1 bg-darkBg border border-borderPurple rounded-lg text-xs font-mono text-gray-300">D3.js</span>
+                    <span class="px-3 py-1 bg-darkBg border border-borderPurple rounded-lg text-xs font-mono text-gray-300">Node.js</span>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <h4 class="text-xs font-mono text-gray-400 uppercase">Fitur Utama</h4>
+                    <ul id="project-features" class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accentPink"></i> Real-time analytics engine</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accentPink"></i> AI-powered insights</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accentPink"></i> Custom dashboard builder</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accentPink"></i> Export laporan PDF otomatis</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="inline-flex items-center gap-2 border border-accentPurple text-accentPurple hover:bg-accentPurple hover:text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition">
+                    LIHAT DEMO <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 px-6 max-w-7xl mx-auto border-t border-borderPurple/30">
+        <div class="space-y-2 mb-10">
+            <span class="text-xs font-mono text-accentPink uppercase tracking-widest">03. HUBUNGI KAMI</span>
+            <h2 class="text-3xl md:text-4xl font-bold">Mari Terhubung</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cardBg border border-borderPurple p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">Kelompok 7</h3>
+                    <p class="text-gray-400 text-sm mb-6">Punya pertanyaan tentang proyek kami atau ingin berkolaborasi?<br>Kami senang mendengar dari Anda.</p>
+                </div>
+                
+                <div class="space-y-4 text-sm font-mono border-t border-borderPurple/50 pt-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Email</span>
+                        <span class="text-gray-200">kelompok7@kampus.ac.id</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Universitas</span>
+                        <span class="text-gray-200">Universitas Negeri Jakarta</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Program</span>
+                        <span class="text-gray-200">Teknik Informatika — 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-cardBg to-darkBg border border-borderPurple p-8 rounded-3xl text-center flex flex-col items-center justify-center space-y-6">
+                <div class="w-16 h-16 rounded-2xl bg-accentPurple/20 flex items-center justify-center text-accentPink">
+                    <i data-lucide="mail" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">Kirim Email Langsung</h4>
+                    <p class="text-gray-400 text-sm mt-1">Kami akan merespons dalam 1–2 hari kerja</p>
+                </div>
+                <a href="mailto:kelompok7@kampus.ac.id" class="bg-gradient-to-r from-accentPurple to-accentPink px-8 py-3 rounded-xl font-semibold flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-accentPurple/20 text-sm">
+                    KELOMPOK7@KAMPUS.AC.ID <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-borderPurple/40 py-8 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+            <p>© 2024 Kelompok 7 — Pemrograman Web</p>
+            <div class="flex items-center gap-6 font-mono">
+                <a href="#" class="hover:text-gray-300">GitHub</a>
+                <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                <a href="#" class="hover:text-gray-300">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons Initialization
+        lucide.createIcons();
+
+        // Typing effect for Hero Section
+        const words = ["Berdampak.", "Inovatif.", "Kolaboratif."];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById("typing-text");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 60 : 120;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 1500;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 400;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+
+        // Project Switcher
+        const projects = {
+            nexus: {
+                title: "Nexus Dashboard",
+                category: "Platform Analitik Real-Time",
+                desc: "Platform analitik real-time dengan visualisasi data interaktif dan sistem manajemen pengguna berbasis AI. Menampilkan grafik dinamis, laporan otomatis, dan dashboard yang dapat dikustomisasi.",
+                url: "nexus-dashboard.vercel.app",
+                tag: "Proyek Utama",
+                tech: ["React", "TypeScript", "D3.js", "Node.js"],
+                features: [
+                    "Real-time analytics engine",
+                    "AI-powered insights",
+                    "Custom dashboard builder",
+                    "Export laporan PDF otomatis"
+                ]
+            },
+            aether: {
+                title: "Aether Commerce",
+                category: "Platform E-Commerce Modern",
+                desc: "Solusi e-commerce generasi berikutnya yang dirancang untuk performa tinggi, pencarian cepat berbasis kecerdasan buatan, serta pengalaman transaksi seamless.",
+                url: "aether-commerce.vercel.app",
+                tag: "Proyek Pendamping",
+                tech: ["Next.js", "Tailwind CSS", "Stripe", "PostgreSQL"],
+                features: [
+                    "Rekomendasi produk AI",
+                    "Checkout satu langkah",
+                    "Manajemen inventori real-time",
+                    "Integrasi multi-payment gateway"
+                ]
+            }
+        };
+
+        function switchProject(key) {
+            const p = projects[key];
+            const btnNexus = document.getElementById("tab-nexus");
+            const btnAether = document.getElementById("tab-aether");
+
+            if(key === 'nexus') {
+                btnNexus.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-accentPurple text-white";
+                btnAether.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition text-gray-400 hover:text-white";
+            } else {
+                btnAether.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-accentPurple text-white";
+                btnNexus.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition text-gray-400 hover:text-white";
+            }
+
+            document.getElementById("project-title").innerText = p.title;
+            document.getElementById("project-category").innerText = p.category;
+            document.getElementById("project-desc").innerText = p.desc;
+            document.getElementById("project-url").innerText = p.url;
+            document.getElementById("project-tag").innerText = p.tag;
+
+            // Render Tech Stack
+            document.getElementById("project-tech").innerHTML = p.tech.map(t => 
+                `<span class="px-3 py-1 bg-darkBg border border-borderPurple rounded-lg text-xs font-mono text-gray-300">${t}</span>`
+            ).join('');
+
+            // Render Features
+            document.getElementById("project-features").innerHTML = p.features.map(f => 
+                `<li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accentPink"></i> ${f}</li>`
+            ).join('');
+
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
