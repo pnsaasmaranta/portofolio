@@ -25,21 +25,22 @@
 <body class="bg-darkBg text-white font-sans antialiased selection:bg-accentPurple selection:text-white">
 
     <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-borderPurple/50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentPurple to-accentPink flex items-center justify-center font-bold text-lg shadow-lg shadow-accentPurple/30">
-                    K8
-                </div>
-                <span class="font-bold text-xl tracking-wide">Kelompok 8</span>
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentPurple to-accentPink flex items-center justify-center font-bold text-lg shadow-lg shadow-accentPurple/30">
+                K8
             </div>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-                <a href="#beranda" class="hover:text-accentPink transition">BERANDA</a>
-                <a href="#tim" class="hover:text-accentPink transition">TIM</a>
-                <a href="#proyek" class="hover:text-accentPink transition">PROYEK</a>
-            </div>
+            <span class="font-bold text-xl tracking-wide">Kelompok 8</span>
         </div>
-    </nav>
+        
+        <!-- Menu Navigasi (Pindah ke Tengah) -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300 absolute left-1/2 -translate-x-1/2">
+            <a href="#beranda" class="hover:text-accentPink transition">BERANDA</a>
+            <a href="#tim" class="hover:text-accentPink transition">TIM</a>
+            <a href="#proyek" class="hover:text-accentPink transition">PROYEK</a>
+        </div>
+    </div>
+</nav>
 
     <section id="beranda" class="pt-36 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
